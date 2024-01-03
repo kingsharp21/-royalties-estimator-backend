@@ -11,7 +11,9 @@ class ArtiseController extends Controller
 
     public function index(){
         // return Artise::paginate();
-        return Artise::where('followers','>',50389646 )->paginate();
+        return Artise::where('followers','>',10389646 )
+            ->get()
+            ->random(25);
     }
 
     public function show (string $id){
