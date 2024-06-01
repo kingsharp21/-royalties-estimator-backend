@@ -14,14 +14,8 @@ return new class extends Migration
         Schema::create('artises', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->string('artise_id');
-            $table->string('email');
-            $table->timestamp('status');
-            $table->string('gender', 26)->nullable();
-            $table->string('contact_number')->nullable();
             $table->string('country')->nullable();
-            $table->string('genres')->nullable();
-            $table->string('followers');
+            $table->string('genre')->nullable();
             $table->string('bg_img')->nullable();
             $table->string('md_img')->nullable();
             $table->string('sm_img')->nullable();

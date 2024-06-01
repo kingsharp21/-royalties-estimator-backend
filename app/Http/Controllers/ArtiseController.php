@@ -21,6 +21,15 @@ class ArtiseController extends Controller
         // return $request;
     }
 
+    public function artiseAlbums(){
+        $tracks = Artise::join('albums', 'artises.id', '=', 'albums.artises_id')
+        ->join('tracks', 'albums.id', '=', 'tracks.albums_id')
+        ->select('artises.name as artise', 'albums.name as album', 'tracks.name as track')
+        ->get();
+
+        return $tracks;
+    }
+
 
     public function create(){
         $data = array(

@@ -22,5 +22,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::get('/artise', [ArtiseController::class, 'index']);
+Route::get('/artise/ablum_tracks', [ArtiseController::class, 'artiseAlbums']);
 Route::get('/artise/{id}', [ArtiseController::class, 'show']);
 

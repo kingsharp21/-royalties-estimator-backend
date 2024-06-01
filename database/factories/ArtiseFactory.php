@@ -20,12 +20,8 @@ class ArtiseFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
-            'gender' => fake()->randomElement(['male', 'female','other']),
             'dob' => fake()->date(),
             'country' => fake()->country(),
-            'contact_number' => fake()->numberBetween(10000000000,90000000000),
         ];
     }
 }

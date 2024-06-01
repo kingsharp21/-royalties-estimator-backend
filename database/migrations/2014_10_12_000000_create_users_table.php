@@ -19,7 +19,8 @@ return new class extends Migration
             $table->string('password');
             $table->string('gender', 25)->nullable();
             $table->date('dob')->nullable();
-            $table->string('contact_number')->nullable();
+            $table->string('contact')->nullable();
+            $table->string('profie_image')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

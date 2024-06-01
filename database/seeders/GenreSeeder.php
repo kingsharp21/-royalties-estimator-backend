@@ -87,6 +87,6 @@ class GenreSeeder extends Seeder
             //     'slug' => str($profession['name'])->slug(),
             // ])->toArray();
 
-        DB::table('genres')->insertOrIgnore($transformed);
+        // DB::table('genres')->insertOrIgnore($transformed);
     }
 }
