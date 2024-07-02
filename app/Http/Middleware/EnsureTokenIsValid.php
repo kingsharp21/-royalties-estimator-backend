@@ -15,6 +15,7 @@ class EnsureTokenIsValid
      */
     public function handle(Request $request, Closure $next): Response
     {
+        dd('middleware found');
         return $next($request);
     }
 }

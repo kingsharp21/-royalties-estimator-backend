@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('artises', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->unique();
-            $table->string('country')->nullable();
-            $table->string('genre')->nullable();
-            $table->string('bg_img')->nullable();
-            $table->string('md_img')->nullable();
-            $table->string('sm_img')->nullable();
-            $table->string('spotify_id');
+            $table->string('name', 191)->unique();
+            $table->string('country', 191)->nullable();
+            $table->string('genre', 191)->nullable();
+            $table->string('bg_img', 191)->nullable();
+            $table->string('md_img', 191)->nullable();
+            $table->string('sm_img', 191)->nullable();
+            $table->string('spotify_id', 191);
             $table->timestamps();
         });
     }

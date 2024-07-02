@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('tracks', function (Blueprint $table) {
             $table->id();
             $table->foreignId('albums_id');
-            $table->string('name');
-            $table->string('duration');
-            $table->string('track_url');
+            $table->string('name', 191);
+            $table->string('duration', 191);
+            $table->string('track_url', 191);
             $table->timestamps();
         });
     }

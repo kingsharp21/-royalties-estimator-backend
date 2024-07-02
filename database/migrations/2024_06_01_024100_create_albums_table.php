@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('albums', function (Blueprint $table) {
             $table->id();
             $table->foreignId('artises_id');
-            $table->string('name');
-            $table->string('release_date');
-            $table->string('image');
+            $table->string('name',191);
+            $table->string('release_date',191);
+            $table->string('image',191);
             $table->timestamps();
         });
         
